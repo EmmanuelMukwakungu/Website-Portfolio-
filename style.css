@@ -272,3 +272,19 @@ span {
     margin-top: 4rem;
   }
 }
+
+@media(max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home img {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  header nav {
+    display: none;
+  }
+}
