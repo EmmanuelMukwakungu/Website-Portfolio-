@@ -1,56 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Portfolio Website</title>
 </head>
-
 <body>
-  <header>
-    <a href="#" class="logo">Emmanuel Mukwakungu</a>
-    <script src="script.js"></script>
-    <button class="menu-toggle" aria-label="Toggle navigation">
-      ☰
-    </button>
 
-    <nav>
-      <a href="#" class="active"> Home</a>
-      <a href="projects.html">Game Projects</a>
-      <a href="#aboutme">Experience</a>
-      <a href="#aboutme">About me</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <section class="home" id="home">
-    <div class="home-content">
-      <h1>Hi, I'm <span>Emmanuel</span></h1>
-      <h3 class="typing-text">I'm a <span></span></h3>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus
-        tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque
-        asperiores ea.
-      </p>
-      <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+<!--navigation menu-->
+<nav>
+  <div class="nav-container">
+  <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+    <span>Emmanuel Mukwakungu</span>
+  </div>
+  <div class="links">
+    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Projects</a></div>
+    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+  </div>
+  <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+  </div>
+
+  <div class="dropdown">
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Contacts</a>
+      <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+    </div>
+  </div>
+</nav>
+<section>
+  <div class="main-container" data-aos="zoom-out" data-aos-duration="3000">
+    <div class="image">
+      <img src="Portfolio Photo.jpeg" alt="">
+    </div>
+    <div class="content">
+      <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+        Hi my name is <span>Emmanuel</span>
+      </h1>
+      <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+        I'm a <span class="typewriter-text"><span></span></span>
+       
       </div>
-
-      <div class="home-buttons">
-      <a href="projects.html" class="btn primary">View Projects</a>
-      <a href="#contact" class="btn secondary">Hire me</a>
+      <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I'm a Cape Town-based Game Designer and Developer 
+        with a great passion ofr crafting immersive experiences and interactive worlds. With Qualification in Both Game Design 
+        and IT, I bring both creative vision and technical skill to everyone of my projects-from designing game mechanics to building web interfaces. 
+        Whether prototyping gameplay systems in Unity or coding a front-end, I enjoy turning ideas into something people can play, use and enjoy.</p>
+      <div class="social-links">
+        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/emmanuel-mukwakungu-91aa792b0/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BE%2FT%2FceKMT%2BmgbDqrGTytTw%3D%3D" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+        <button>Hire me</button>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="home-img">
-      <img src="Portfolio Photo.jpeg" alt="Portrait of Emmanuel">
+
+
+<!--About Section-->
+<section class="about" id="about">
+  <div class="content">
+    <div class="title" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
+    <div class="about-details">
+      <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+        <img src="WhatsApp Image 2026-07-01 at 04.32.03.jpeg" alt="">
+      </div>
+      <div class="right">
+        <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Game Design is my passion</div>
+        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+        My name is Emmanuel Mukwakungu,I am an aspiring Game Designer, Game Developer, and Web Designer based in Cape Town, South Africa. I
+        hold qualifications in Game Design from SAE Institute and IT from Varsity College, where I developed a strong foundation
+        in both the creative and technical sides of digital media.
+        My journey into game design started with a simple passion — I loved games and wanted to understand how they worked. That
+        curiosity pushed me to learn and study Unity, C#, and the principles behind game mechanics, level design, and player experience.
+        Over time I've built projects ranging from fast-paced arcade games to story-driven concepts, each one teaching me
+        something new about what makes a game feel good to play.
+        Outside of games, I enjoy web design — there's something satisfying about building something clean and functional from
+        scratch using just HTML, CSS, and JavaScript. I see it as another form of design thinking: understanding what a user
+        needs and crafting an experience around that.
+        When I'm not at a screen, you'll find me on the basketball court. The game has taught me a lot about teamwork, focus,
+        and performing under pressure — qualities I carry into everything I do.
+        I'm currently seeking opportunities where I can contribute my skills, keep growing, and work on projects that matter. If
+        you have something in mind, I'd love to hear from it.
+        </p>
+        <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
+          <button>Download CV</button>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+<!--Skill Section-->
+<section class="skills" id="skills">
+  <div class="content">
+    <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Skills</span></div>
+    <div class="skills-details">
+      <div class="text">
+        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+          Skills Reflect Our Knowledge
+        </div>
+        <p data-aos="fade-right">Every skill I have was built through curiosity and hands-on practice. From writing game logic in C# to styling and designing
+        responsive web pages, I've always learned best by building real things and figuring out how they works. My technical skills
+        span game development, application development, and front-end web design and I'm always adding to that list.</p>
+        <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+          <div class="num">10</div>
+          <div class="exp">
+            Years Of<br/>
+            Experience
+          </div>
+        </div>
+      </div>
+      <div class="boxes">
+        <div class="box">
+          <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">HTML</div>
+          <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">90%</div>
+        </div>
+        <div class="box">
+          <div class="topic" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">CSS</div>
+          <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">80%</div>
+        </div>
+        <div class="box">
+          <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">JavaScript</div>
+          <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">60%</div>
+        </div>
+        <div class="box">
+          <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">C-Sharp</div>
+          <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">85%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Project Section-->
+<section class="projects" id="projects">
+  <div class="content">
+    <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Projects</span></div>
+    <div class="boxes">
+      <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <div class="icon">
+          <i class="fas fa-gamepad"></i>
+        </div>
+        <div class="topic">Bounce Ascends</div>
+        <p>Join the adventurous bouncy ball named Bounce on his quest to collect an artifact called the
+        Mask of the forgotten sun by ascending through horrors found in the Tower of Trials</p>
+      </div>
+      <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+        <div class="icon">
+          <i class="fas fa-gamepad"></i>
+        </div>
+        <div class="topic">The DeadLine</div>
+        <p>Superheroes are saving the world. You're just trying to clock in on time. Navigate a city being torn apart by an epic
+        battle and reach work before the deadline hits</p>
+      </div>
+      <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+        <div class="icon">
+          <i class="fas fa-gamepad"></i>
+        </div>
+        <div class="topic">Dungeon Survivors</div>
+        <p>Dungeon Survivors is a top-down roguelite survival game where you fight off endless waves of monsters deep in a dark
+        dungeon. Inspired by the auto-battler style of Vampire Survivors, the goal is simple — stay alive as long as possible,
+        collect power-ups, and see how far you can push before the dungeon swallows you whole."</p>
+      </div>
+      <div class="box"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+        <div class="icon">
+          <i class="fas fa-gamepad"></i>
+        </div>
+        <div class="topic">Pong-Rally</div>
+        <p>Pong-Rally is a fast-paced arcade sports game inspired by the classic Pong arcade video game. It is completely
+        redesigned for modern gameplay including power-ups, reactive physics, competitive ranked local matches and dynamic
+        arenas making every match feel different.
+</p>
+      </div>
+      <div class="box"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+        <div class="icon">
+          <i class="fas fa-gamepad"></i>
+        </div>
+        <div class="topic">Brick Breaker</div>
+        <p>A classic arcade-style Brick Breaker game built in Unity. Control the paddle, keep the ball in play, and clear every
+        brick from the board before you run out of lives. Simple in concept but always satisfying to play</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Contact Section-->
+<section class="contact" id="contact">
+  <div class="content">
+    <div class="title" data-aos="fade-up" data-aos-duration="1500">
+      <span>Contact Me</span>
+    </div>
+    <div class="text">
+      <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project?</div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sed beatae at natus totam voluptatum, veritatis nam amet explicabo laboriosam modi provident architecto adipisci repellat exercitationem eius repudiandae! Quo, quibusdam.</p>
+      <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+        <button onclick="openModal()">let's Chat</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Modal -->
+<div class="modal-overlay" id="contactModal">
+  <div class="modal">
+    <i class="fa-solid fa-xmark modal-close" onclick="closeModal()"></i>
+    <h2>Let's Connect</h2>
+    <p class="modal-subtitle">Feel free to reach out through any of these platforms</p>
+
+    <div class="modal-links">
+      <a href="mailto:youremail@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>mukwakunguemmanuelgmail.com</span>
+      </a>
+      <a href="www.linkedin.com/in/emmanuel-mukwakungu-91aa792b0" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>linkedin.com/in/emmanuel-mukwakungu</span>
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>github.com/emmanuelmukwakungu</span>
+      </a>
+      <a href="tel:+27000000000">
+        <i class="fa-solid fa-phone"></i>
+        <span>(+27) 063 670 2271</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!--Footer Section Start-->
+<footer>
+  <div class="text">
+    <span>Created By
+      <a href="#">Emmanuel Mukwakungu</a> | &#169; 2024 All Rights Reserved</span>
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<script src="script.js"></script>
 </body>
-
 </html>
